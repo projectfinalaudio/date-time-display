@@ -3,7 +3,7 @@
 // Current time is : 10 PM : 30 : 38
 
 
-// PROGRAM START
+// PROGRAM 1
 const log = console.log;
 
 let date = new Date();
@@ -37,4 +37,27 @@ if (hours >= 12 && hours < 24)
     log(`Current time is : ${hours} AM : ${minutes} : ${seconds}`);    
 }
 
+
+
+// PROGRAM 2
+
+let date = new Date();
+let month = date.getMonth();
+let day = date.getDate();
+let year = date.getFullYear();
+
+// CHECK IF THE MONTH IS LESS THAN 10
+if (month < 10)
+{
+    month = `0${month}`;
+}
+
+// CHECK IF THE DAY IS LESS THAN 10
+if (day < 10)
+{
+    day = `0${day}`;    
+}
+
+// OUTPUT
+log(`${month}/${day}/${year}`);
 
